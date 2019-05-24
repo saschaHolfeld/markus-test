@@ -579,7 +579,9 @@ pre code {
   overflow-y: scroll;
 }
 
-.container {
+.container,
+.footer__contact,
+.footer {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -588,25 +590,33 @@ pre code {
 }
 
 @media (min-width: 576px) {
-  .container {
+  .container,
+  .footer__contact,
+  .footer {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container,
+  .footer__contact,
+  .footer {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .footer__contact,
+  .footer {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  .footer__contact,
+  .footer {
     max-width: 1140px;
   }
 }
@@ -619,7 +629,8 @@ pre code {
   margin-left: auto;
 }
 
-.row {
+.row,
+.footer__contact__row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -672,6 +683,7 @@ pre code {
 .col-md-10,
 .col-md-9,
 .col-md-8,
+.footer__contact__element,
 .col-md-7,
 .col-md-6,
 .col-md-5,
@@ -1119,7 +1131,8 @@ pre code {
     max-width: 58.3333333333%;
   }
 
-  .col-md-8 {
+  .col-md-8,
+  .footer__contact__element {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
   }
@@ -4357,6 +4370,8 @@ input[type=button].btn-block {
 }
 
 .navbar > .container,
+.navbar > .footer__contact,
+.navbar > .footer,
 .navbar > .container-fluid {
   display: flex;
   flex-wrap: wrap;
@@ -4435,6 +4450,8 @@ input[type=button].btn-block {
 
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
+  .navbar-expand-sm > .footer__contact,
+  .navbar-expand-sm > .footer,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -4461,6 +4478,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-sm > .container,
+  .navbar-expand-sm > .footer__contact,
+  .navbar-expand-sm > .footer,
   .navbar-expand-sm > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -4477,6 +4496,8 @@ input[type=button].btn-block {
 
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
+  .navbar-expand-md > .footer__contact,
+  .navbar-expand-md > .footer,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -4503,6 +4524,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-md > .container,
+  .navbar-expand-md > .footer__contact,
+  .navbar-expand-md > .footer,
   .navbar-expand-md > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -4519,6 +4542,8 @@ input[type=button].btn-block {
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
+  .navbar-expand-lg > .footer__contact,
+  .navbar-expand-lg > .footer,
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -4545,6 +4570,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-lg > .container,
+  .navbar-expand-lg > .footer__contact,
+  .navbar-expand-lg > .footer,
   .navbar-expand-lg > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -4561,6 +4588,8 @@ input[type=button].btn-block {
 
 @media (max-width: 1199.98px) {
   .navbar-expand-xl > .container,
+  .navbar-expand-xl > .footer__contact,
+  .navbar-expand-xl > .footer,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -4587,6 +4616,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-xl > .container,
+  .navbar-expand-xl > .footer__contact,
+  .navbar-expand-xl > .footer,
   .navbar-expand-xl > .container-fluid {
     flex-wrap: nowrap;
   }
@@ -4607,6 +4638,8 @@ input[type=button].btn-block {
 }
 
 .navbar-expand > .container,
+.navbar-expand > .footer__contact,
+.navbar-expand > .footer,
 .navbar-expand > .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -4626,6 +4659,8 @@ input[type=button].btn-block {
 }
 
 .navbar-expand > .container,
+.navbar-expand > .footer__contact,
+.navbar-expand > .footer,
 .navbar-expand > .container-fluid {
   flex-wrap: nowrap;
 }
@@ -10619,7 +10654,9 @@ a.text-dark:focus {
     min-width: 992px !important;
   }
 
-  .container {
+  .container,
+  .footer__contact,
+  .footer {
     min-width: 992px !important;
   }
 
@@ -10664,5 +10701,14 @@ a.text-dark:focus {
 
 .test {
   color: red;
+  background-color: black;
+}
+
+.footer__wrapper {
+  background: black;
+}
+
+.footer__contact {
+  background-color: white;
 }
 

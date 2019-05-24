@@ -7,7 +7,34 @@
     {{ test }}
     <div class="test">test</div>
 
+    <footer class="footer__wrapper">
+
+            <div class="footer__contact">
+                <div class="footer__contact__row">
+                    <div class="footer__contact__element">
+                        <div >
+                            <div class="footer__contact__icon">
+                                <svg class="contact-icon"><use xlink:href="#svg_contact_phone" xmlns:xlink="https://www.w3.org/1999/xlink"></use></svg>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="footer">
+            <div class="">
+
+            </div>
+
+        </div>
+    </footer>
+
+    <svg class="social-icon"><use xlink:href="#svg_social_fb" xmlns:xlink="https://www.w3.org/1999/xlink"></use></svg>
+
 
         <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
+    {% include 'icons.twig' %}
     </body>
 </html>

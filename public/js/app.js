@@ -49437,8 +49437,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /www/markus-test/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /www/markus-test/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/arbeitsplatz2/Documents/www/markus-test/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/arbeitsplatz2/Documents/www/markus-test/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

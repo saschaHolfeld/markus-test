@@ -1,3 +1,25 @@
 .test{
   color:red;
+  background-color: black;
+}
+
+
+.footer{
+  @extend .container;
+
+
+  &__wrapper{
+    background:black;
+  }
+
+  &__contact{
+    @extend .container;
+    background-color: white;
+    &__row{
+      @extend .row;
+    }
+    &__element{
+      @extend .col-md-8;
+    }
+  }
 }
