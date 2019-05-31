@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <title>{% block title %} Test Title {% endblock %}</title>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css"/>
+</head>
+<body data-spy="scroll" data-target="#navbar_main" data-offset="50">
+<header>
+    <nav id="navbar_main" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TestPage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {% block navlist %}
+                    <li class="nav-item"><a class="nav-link" href="#">placeholder 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">placeholder 2</a></li>
+                {% endblock %}
+            </ul>
+        </div>
+    </nav>
+</header>
+{% block body %}
+    <h1>I am a placeholder</h1>
+    <p>change me!</p>
+{% endblock %}
+
+<footer class="footer__wrapper">
+    <div class="footer__contact">
+        <div class="footer__contact__row">
+            <div class="footer__contact__element">
+                <div class="footer__contact__element__icon">
+                    <svg class="contact-icon">
+                        <use xlink:href="#svg_contact_phone" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                    </svg>
+                </div>
+                <div class="footer__contact__element__info">
+                    <p><strong>PHONE</strong></p>
+                    <p>0800 000 800</p>
+                </div>
+            </div>
+            <div class="footer__contact__element">
+                <div class="footer__contact__element__icon">
+                    <svg class="contact-icon">
+                        <use xlink:href="#svg_contact_mail" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                    </svg>
+                </div>
+                <div class="footer__contact__element__info">
+                    <p><strong>MAIL</strong></p>
+                    <p>info@test.de</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="footer__column"><h3>Section 1</h3>
+                <ul class="footer__list">
+                    <li class="footer__list__item">link 1</li>
+                    <li class="footer__list__item">link 2</li>
+                    <li class="footer__list__item">link 3</li>
+                    <li class="footer__list__item">link 4</li>
+                </ul>
+            </div>
+            <div class="footer__column"><h3>Section 2</h3>
+                <ul class="footer__list">
+                    <li class="footer__list__item">link 1</li>
+                    <li class="footer__list__item">link 2</li>
+                    <li class="footer__list__item">link 3</li>
+                    <li class="footer__list__item">link 4</li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Section 3</h3>
+                <ul class="footer__list">
+                    <li class="footer__list__item">link 1</li>
+                    <li class="footer__list__item">link 2</li>
+                </ul>
+                <p>social media</p>
+                <div class="d-flex flex-row">
+                    <svg class="social-icon">
+                        <use xlink:href="#svg_social_fb" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                    </svg>
+                    <svg class="social-icon">
+                        <use xlink:href="#svg_social_fb" xmlns:xlink="https://www.w3.org/1999/xlink"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>

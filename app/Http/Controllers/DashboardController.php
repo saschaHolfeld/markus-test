@@ -23,7 +23,8 @@ class DashboardController extends Controller {
 
 
         return View("dashboard")->with(array(
-            "test" => "test"
+            "test" => "test",
+            "title" => "Test Dashboard"
         ));
 
     }
