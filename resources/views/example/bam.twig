@@ -1,0 +1,42 @@
+{#
+    Wrapper dient zur Abtrennung der Elemente und geht immer auf volle Bildschirmbreite
+
+    Er wird unter anderem genutzt um
+    1. Margin top/bottom - Einheitlicher Abstant zwischen Elementen
+    2. Hintergrundfarbe der Sektion (Über Identifier können verschiedene Hintergrundfarben vergeben werden)
+    3. Padding top/bottom
+#}
+<div class="bam-element__wrapper bam-element__wrapper--blue">
+
+    {#
+        Das Hauptelement der Struktur umfasst den Container
+        1. extend .container-max
+    #}
+    <div class="bam-element">
+        {#
+            Headline
+            1. Werden über Include resettet und neu belegt
+            2. margin / padding wird zurückgesetzt und an der Klasse neu vergeben - Ausnahme wenn Designer Boodstrap-Board vorbereitet hat
+            3. Identifier dienen zum detailliertem Styling
+        #}
+        <h2 class="bam-element__headline bam-element__headline--h2"></h2>
+        {#
+            1. extend .row
+        #}
+        <div class="bam-element__row">
+            {#
+                1. extend .col-X
+                2. Elemente die über JS angesprochen werden bekommen einen separaten Identifier
+            #}
+            <div class="bam-element__col bam-element__col--js-click">
+                <p class="bam-element__headline bam-element__headline--h3"></p>
+                <p class="bam-element__text bam-element__text--large"></p>
+                <p class="bam-element__text bam-element__text--small"></p>
+                <div class="bam-element__row bam-element__row--price">
+                    <p class="bam-element__col bam-element__col--uvp"></p>
+                    <p class="bam-element__col bam-element__col--price"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
